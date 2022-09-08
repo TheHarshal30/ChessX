@@ -259,35 +259,27 @@
     left: 0;
     z-index: 100;
   }
-  .chessboard{
-    width: 100px;
-  }
 }
 .chessboard{
-    position: absolute;
-    top: 8%;
-    left: 40%;
-    width: 600px;
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
 
+}
 .buttons{
-    position: absolute;
-    top: 93%;
-    left: 60%;
-    transform: translate(-50%,-50%);
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+a{
+  cursor: pointer;
 }
 .status{
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    transform: translate(-50%,-50%);
-}
-
-a{
-    cursor: pointer;
-}
-.autoplay{
-    position: absolute;
-    top: 50%;
-    left: 30%;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%,-50%);
 }
