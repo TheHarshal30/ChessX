@@ -5,50 +5,40 @@
 <head>
   <meta charset="UTF-8">
   <title> Black Pearl </title>
-       <!-- Bootstrap CSS -->
-       <link rel="stylesheet" 
-       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-       crossorigin="anonymous">
-  
-  
-   <!-- Google Icons (Material Design) -->
-   <link rel="stylesheet" 
-       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-       crossorigin="anonymous">
-  
-   <!-- Font Awesome -->
-   <script src="https://kit.fontawesome.com/5b14db5f0b.js" crossorigin="anonymous"></script>
-  
-   <!-- jQuery --> 
-   <script
-       src="https://code.jquery.com/jquery-3.5.1.js"
-       integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-       crossorigin="anonymous">
-   </script>
-  
-   <!-- Chessboard JS -->
-   <link rel="stylesheet"
-       href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
-       integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU"
-       crossorigin="anonymous">
-   <script defer src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
-       integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
-       crossorigin="anonymous"></script>
-  
-   <!-- Chess JS (slightly modified) -->
-   <script defer src="/js/chess.js"></script>
-   </script>
-  
-   <!-- Bootstrap JS --> 
-   <script defer
-       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" 
-       integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" 
-       crossorigin="anonymous">
-   </script>
-  
-   <!-- Custom JS -->
-   <script defer src="/js/algo.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+  <!-- Google Icons (Material Design) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/5b14db5f0b.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+    </script>
+
+  <!-- Chessboard JS -->
+  <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css"
+    integrity="sha384-q94+BZtLrkL1/ohfjR8c6L+A6qzNH9R2hBLwyoAfu3i/WCvQjzL2RQJ3uNHDISdU" crossorigin="anonymous">
+  <script defer src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"
+    integrity="sha384-8Vi8VHwn3vjQ9eUHUxex3JSN/NFqUg3QbPyX8kWyb93+8AC/pPWTzj+nHtbC5bxD"
+    crossorigin="anonymous"></script>
+
+  <!-- Chess JS (slightly modified) -->
+  <script defer src="/js/chess.js"></script>
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+    integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous">
+    </script>
+
+  <!-- Custom JS -->
+  <script defer src="/js/algo.js"></script>
   <link rel="stylesheet" href="/css/dropdown.css">
   <!-- Boxiocns CDN Link -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -76,11 +66,11 @@
           </div>
           <ul class="sub-menu">
             <select id="search-depth">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3" selected>3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" selected>3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
             </select>
           </ul>
         </li>
@@ -109,36 +99,42 @@
             <i class='bx bxs-chevron-down arrow'></i>
           </div>
           <ul class="sub-menu">
-                <li><a id="resetBtn">Stop and Reset</a></li>
+            <li><a id="resetBtn">Stop and Reset</a></li>
           </ul>
         </li>
       </ul>
     </div>
-    <section class="home-section">
-      <div class="home-content">
-        <i class='bx bx-menu'></i>
-        <span class="text">The Black Pearl</span> <br />
-      </div>
-    </section>
-    <div class="demo"></div>
-    <div class="chessboard">
-        <div id="myBoard"></div>
-    </div>
-    <div class="buttons">
-        <div class="row my-3 text-align-center">
-            <div class="col-md-6 my-2">
-                <button class="btn btn-danger" id="undoBtn">Undo</button>
-            </div>
-            <div class="col-md-6 my-2">
-                <button class="btn btn-success" id="redoBtn">Redo</button>
-            </div>
+    <div class="mainDiv">
+      <section class="home-section">
+        <div class="home-content">
+          <i class='bx bx-menu'></i>
+          <span class="text">The Black Pearl</span> <br />
         </div>
+      </section>
+      <!-- <div class="demo"></div> -->
+      <div class="chessDiv">
+        <div class="chessboard">
+          <div id="myBoard"></div>
+        </div>
+        
+        <div class="status">
+          <h2>Status</h2>
+          <p><span id="status">No check, checkmate, or draw.</span></p>
+          <div class="buttons">
+            <div class="row my-3 text-align-center">
+              <div class="col-md-6 my-2">
+                <button class="btn btn-danger" id="undoBtn">Undo</button>
+              </div>
+              <div class="col-md-6 my-2">
+                <button class="btn btn-success" id="redoBtn">Redo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
-    <div class="status">
-        <h2>Status</h2>
-        <p><span id="status">No check, checkmate, or draw.</span></p>
-    </div>
-    
+
   </div>
 
   <script>
@@ -157,25 +153,25 @@
     }); */
     $(function () {
       /* console.log("width: "+ document.body.clientWidth); */
-      
+
       resizeScreen();
-      $(window).resize(function(){
+      $(window).resize(function () {
         resizeScreen();
       });
-      $('.bx-menu').click(function(){
+      $('.bx-menu').click(function () {
 
         // 點選選單按鈕時，大螢幕為新增或移除.close，小螢幕新增或移除.small-screen預設有.close，
-        if(document.body.clientWidth > 400){
+        if (document.body.clientWidth > 400) {
           $('.sidebar').toggleClass('close');
-        }else{
+        } else {
           $('.sidebar').toggleClass('small-screen');
         }
       });
-      
+
       function resizeScreen() {
-        if(document.body.clientWidth < 400){
+        if (document.body.clientWidth < 400) {
           $('.sidebar').addClass('close');
-        }else{
+        } else {
           $('.sidebar').removeClass('close');
         }
       }

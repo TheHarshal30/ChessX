@@ -216,10 +216,15 @@
 .sidebar .profile-details .job{
   font-size: 12px;
 }
+
+.mainDiv{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+}
 .home-section{
   position: relative;
   background: #E4E9F7;
-  min-height: 100%;
   left: 0px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
@@ -260,26 +265,30 @@
     z-index: 100;
   }
 }
+.chessDiv{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
 .chessboard{
-  position: absolute;
-  top: 50%;
+  position: relative;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
+  transform: translate(-50%, -50%); */
+  width: 50%;
 
 }
 .buttons{
-  position: absolute;
-  top: 98%;
-  left: 50%;
-  transform: translate(-50%, -90%);
+  position: relative;
+  
+  /* transform: translate(-50%, -90%); */
 }
 a{
   cursor: pointer;
 }
 .status{
-  position: absolute;
+  position: relative;
   top: 50%;
-  left: 80%;
+  right: -5%;
   transform: translate(-50%,-50%);
 }
