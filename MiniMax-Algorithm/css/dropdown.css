@@ -224,10 +224,10 @@
 }
 .home-section{
   position: relative;
-  background: #E4E9F7;
+  background: #9b96d8;
   left: 0px;
-  width: calc(100% - 260px);
   transition: all 0.5s ease;
+  color: #fff;
 }
 .sidebar.close ~ .home-section{
   left: 0px;
@@ -253,7 +253,14 @@
   font-size: 26px;
   font-weight: 600;
 }
-@media (max-width: 400px) {
+
+.chessDiv{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+@media (max-width: 460px) {
 
   .sidebar.close.small-screen{
     width: 0;
@@ -264,18 +271,17 @@
     left: 0;
     z-index: 100;
   }
+  
+
 }
-.chessDiv{
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
+@media screen and (min-width: 1000px) {
+  .chessDiv{
+    flex-direction: row;
+  }
 }
 .chessboard{
   position: relative;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  width: 50%;
+  width: 55%;
 
 }
 .buttons{
@@ -288,7 +294,22 @@ a{
 }
 .status{
   position: relative;
-  top: 50%;
+  /* top: 50%;
   right: -5%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%); */
+}
+
+.warning{
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  *{
+    overflow: hidden;
+  }
+  .warning{
+    height: 100vh;
+    width: 100vw;
+    display: block;
+  }
 }
