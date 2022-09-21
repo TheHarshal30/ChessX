@@ -313,3 +313,7 @@ a{
     display: block;
   }
 }
+.github{
+  position: relative;
+  padding-left: 35%;
+}
