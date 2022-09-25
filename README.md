@@ -32,6 +32,7 @@ ChessX is a chess engine consisting of 3 models. Model_1 is available to play
 ## Sample:
 <div align="left"> 
 <h3>Model-1 vs Emir(1000):</h3>
-<img src="https://github.com/TheHarshal30/ChessX/blob/main/res/ezgif-4-43e4ce0adb.gif" width=100% height=400>
+<img src="https://github.com/TheHarshal30/ChessX/blob/main/res/ezgif-4-43e4ce0adb.gif" width=60% height=500>
+
 ## Support
 ⭐ **Please Star  and share the project. Thanks!** ❤️ 
