@@ -16,7 +16,7 @@
 
 ## About:
 ChessX is a chess engine consisting of 3 models. Model_1 is available to play 
-<a href="chesx.netlify.app/">here</a>
+<a href="https://chesx.netlify.app/">here</a>
 
 
 
