@@ -15,7 +15,7 @@
  </div> 
 
 ## About:
-ChessX is a chess engine consisting of 3 models. Model_1 is available to play 
+ChessX is a chess engine consisting of 2 models. Model_1 is available to play 
 <a href="https://chesx.netlify.app/">here</a>
 
 
@@ -25,7 +25,6 @@ ChessX is a chess engine consisting of 3 models. Model_1 is available to play
 
 **Model-2:** This model uses two algorithms *Convolutional Neural Networks(CNN)* and *Minimax Algorithm*. When generating a move, it judges the effectiveness values outputted by the different algorithms and finds which algorithm has the highest effectiveness value.
 
-**Model-3:** A model is only as good as its data. In this context, a chess model trained on data can only play as well as the source of the data. By removing data from the equation, the theoretical ceiling of the algorithm would be removed, which would give the model (theoretically) infinite potential.
 
 
 
