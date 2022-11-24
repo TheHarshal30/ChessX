@@ -7,7 +7,7 @@ from board_conversion import *
 import chess
 
 class NeuralNetwork():
-    '''
+    
     def __init__(self):
         self.optimizer = 'Adam'
         self.loss = 'categorical_crossentropy'
@@ -25,7 +25,7 @@ class NeuralNetwork():
         model = Model(inputs=input_layer,outputs=output)
         model.compile(optimizer = self.optimzier,loss = self.loss)
         self.model = model
-    '''
+    
         
     def train(self,X,y,epochs,EarlyStop = True):
         if EarlyStop:
